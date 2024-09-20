@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inscription</h1>
+    <form id="registerForm" action="inscrip.php" method="post">
+      <label for="firstName">Prénom:<span class="required">*</span></label>
+      <input type="text" id="firstName" name="firstName" >
+
+      <label for="lastName">Nom:<span class="required">*</span></label>
+      <input type="text" id="lastName" name="lastName" >
+      <label for="email">Email:<span class="required">*</span></label>
+      <input type="email" id="email" name="email" >
+      <label for="cin">Numéro CIN (8 chiffres):<span class="required">*</span></label>
+      <input type="text" id="cin" name="cin" pattern="[0-9]{8}">
+
+      <label for="username">Pseudo:<span class="required">*</span></label>
+      <input type="text" id="username" name="username" >
+
+      <label for="password">Mot de passe (au moins 8 caractères, contient au moins une lettre majuscule, une lettre minuscule, un chiffre et se termine par $ ou #):<span class="required">*</span></label>
+      <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}[$#]$" required>
+
+      <button type="submit" id="create-account">Valider</button>
+      <button type="button" id="go-back">Retour</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

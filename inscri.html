@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inscription</h1>
+    <form id="registerForm" action="../../Controller/register.php" method="post">
+      <label for="firstName">Prénom:<span class="required">*</span></label>
+      <input type="text" id="firstName" name="firstName" >
+
+      <label for="lastName">Nom:<span class="required">*</span></label>
+      <input type="text" id="lastName" name="lastName">
+
+      <label for="cin">Numéro CIN (8 chiffres):<span class="required">*</span></label>
+      <input type="text" id="cin" name="cin" pattern="[0-9]{8}">
+
+      <label for="email">Email:<span class="required">*</span></label>
+      <input type="email" id="email" name="email" >
+
+      <label for="companyName">Nom de l'entreprise:<span class="required">*</span></label>
+      <input type="text" id="companyName" name="companyName" >
+
+      <label for="companyAddress">Adresse de l'entreprise:<span class="required">*</span></label>
+      <input type="text" id="companyAddress" name="companyAddress" >
+
+      <label for="registerNumber">Numéro du registre de commerce (1 lettre majuscule suivie de 10 chiffres):<span class="required">*</span></label>
+      <input type="text" id="registerNumber" name="registerNumber" pattern="[A-Z][0-9]{10}" >
+
+      <label for="username">Pseudo:<span class="required">*</span></label>
+      <input type="text" id="pseudo" name="pseudo" >
+
+      <label for="password">Mot de passe (au moins 8 caractères, contient au moins une lettre majuscule, une lettre minuscule, un chiffre et se termine par $ ou #):<span class="required">*</span></label>
+      <input type="password" id="mdp" name="mdp" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}[$#]$" required>
+
+      <button type="submit" id="create-account">Valider</button>
+    </form>
+    <button type="button" id="go-back">Retour</button>
+  </div>
+
+  <script>
+    document.getElementById("go-back").addEventListener("click", function() {
+     
+      window.location.href = "../choice.html";
+    });
+  </script>
+</body>
+</html>

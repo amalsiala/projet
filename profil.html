@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Startuper</title>
+  <link rel="stylesheet" href="../star.css">
+</head>
+<body>
+  <header>
+    <h1>Profil Startuper</h1>
+    <form id="registerForm" action="profil.php" method="post"></form>
+    
+    <nav>
+        <ul>
+            <li><a href="#ajouter-projet">Ajouter Projet</a></li>
+            <li><a href="#modifier-profil">Modifier Profil</a></li>
+            <li><a href="#lister-projets">Lister Projets Déposés</a></li>
+            <li><a href="#editer-projet">Editer Projet</a></li>
+            <li><a href="#supprimer-projet">Supprimer Projet</a></li>
+            <li><a href="logout.php">Déconnexion</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <section id="profil-details">
+    <h2>Détails du Profil</h2>
+    <!-- Insérez ici les détails du profil de l'utilisateur -->
+    <p>Nom d'utilisateur</p>
+    <!-- Vous pouvez afficher d'autres détails du profil ici -->
+  </section>
+
+  <section id="ajouter-projet">
+    <h2>Ajouter Projet</h2>
+    <form action="../controller/ajouterProjet.php" method="post">
+            
+      <label for="titre">Project Title</label>
+      <input name="titre" id="titre" type="text"><br>
+      <label for="descriptionProjet">Description</label>
+      <textarea name="descriptionProjet" id="descriptionProjet"></textarea><br>
+      <label for="actAV">Number of Actions for Sale</label>
+      <input name="actAV" id="actAV" type="number"><br>
+      <label for="actV">Number of Actions Sold</label>
+      <input name="actV" id="actV" type="number"><br>
+      <label for="prixAct">Price per Action</label>
+      <input name="prixAct" id="prixAct" type="number">
+      <button type="submit">Add</button>
+  </form>
+  </section>
+
+
+  <script src="../script.js"></script>
+</body>
+</html>

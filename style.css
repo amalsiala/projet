@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('startuppp.jpg');
+  background-size: 500px,500px;
+  /* Ajuste la taille de l'image pour couvrir entièrement le contenu */
+  background-position: center; /* Centre l'image dans la fenêtre du navigateur */
+  background-repeat: repeat;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto; /* Les marges gauche et droite sont automatiquement calculées */
+  padding: 20px;
+  background-color:#f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+  
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color:black;
+  margin-bottom: 20px;
+  position: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color:black;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #1877f2;
+}
+
+button {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #166fe5;
+}
+
+hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+#create-account {
+  background-color: green; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px;
+}
+
+#create-account:hover {
+  background-color: darkgreen; 
+}
+
+a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.required{
+  color:red;
+}
+#go-back {
+  background-color:  #1877f2; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+#go-back:hover {
+  background-color:  #1877f2; 
+}
+.footer {
+  background-color: transparent;
+  color: #fff;
+  padding: 3px; /* Réduit le padding à 10px */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
